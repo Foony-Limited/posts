@@ -1,6 +1,6 @@
 import {kebabCase} from 'lodash';
 
-const allPosts = require.context('!@mdx-js/loader!posts', true, /(\.mdx|\.md)$/, 'lazy');
+const allPosts = require.context('!@mdx-js/loader!~/posts', true, /(\.mdx|\.md)$/, 'lazy');
 
 type PostType = {
   /** The Date this post was created at. Posts follow the format "yyyy_mm_dd_PostTitle.md". */
