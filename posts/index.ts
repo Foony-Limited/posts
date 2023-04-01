@@ -1,4 +1,4 @@
-import {kebabCase} from 'moderndash';
+import {kebabCase} from 'shared-library/lib/utils/StringUtils';
 
 const allPosts = require.context('!@mdx-js/loader!~/posts', true, /(\.mdx|\.md)$/, 'lazy');
 
